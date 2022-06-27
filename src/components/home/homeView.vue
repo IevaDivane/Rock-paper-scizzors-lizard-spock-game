@@ -19,10 +19,11 @@
 import FooterView from "@/components/footer/footer";
 export default {
   name: "homeView",
+
   components: { FooterView },
 };
 </script>
 
 <style scoped lang="scss">
-@import "homeView.scss";
+@import "homeView";
 </style>

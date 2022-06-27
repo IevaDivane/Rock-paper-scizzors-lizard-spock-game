@@ -64,7 +64,9 @@ import FooterView from "@/components/footer/footer.vue";
 
 export default defineComponent({
   name: "gameView",
+
   components: { FooterView },
+
   data: () => ({
     myPick: null,
     randPick: "",
@@ -72,6 +74,7 @@ export default defineComponent({
     pcScore: 0,
     text: "",
   }),
+
   methods: {
     choose(pick: any) {
       this.myPick = pick;
@@ -79,6 +82,7 @@ export default defineComponent({
       this.randPick = picks[Math.floor(Math.random() * picks.length)];
       this.setScore();
     },
+
     setScore() {
       if (this.myPick == "rock") {
         if (this.randPick == "paper") {
@@ -164,6 +168,7 @@ export default defineComponent({
       }
     },
   },
+
   computed: {
     computedUser: function () {
       return {
@@ -174,6 +179,7 @@ export default defineComponent({
         lizard: this.myPick === "lizard",
       };
     },
+
     computedRand: function () {
       return {
         rock: this.randPick === "rock",
@@ -188,5 +194,5 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-@import "game";
+@import "./game";
 </style>

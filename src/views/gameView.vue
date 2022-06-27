@@ -6,11 +6,10 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Game from "@/components/game.vue"; // @ is an alias to /src
+import Game from "@/components/game/game.vue"; // @ is an alias to /src
 
 export default defineComponent({
-  // eslint-disable-next-line vue/multi-word-component-names
-  name: "game",
+  name: "gameView",
   components: {
     Game,
   },

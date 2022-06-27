@@ -1,11 +1,51 @@
 .rules{
-   display: grid;
-    justify-content: center;
+    display: grid;
     gap: 50px;
+    justify-content: center;
 }
 
-
 .rules__image{
-    max-width: 300px;
+    max-width: 700px;
     width: 100%;
+}
+
+h2 {
+    font-size: 5.5em;
+    color: white;
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+}
+
+.play{
+   padding: 20px;
+}
+
+.rules__header{
+  display: flex;
+  gap: 10px;
+}
+
+h3{
+  color: #fe05e1;
+}
+
+.rules__text p{
+  max-width: 500px;
+  width: 100%;
+}
+
+.rules__text{
+  display: grid;
+  justify-content: end;
+  border: 1px solid #225762;
+  padding: 20px;
+}
+
+.rules__video{
+  border: 1px solid #225762;
+  padding: 20px;
+}
+
+.rules__schema{
+  border: 1px solid #225762;
+  padding: 20px;
 }

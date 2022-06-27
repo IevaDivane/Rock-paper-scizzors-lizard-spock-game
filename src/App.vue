@@ -1,30 +1,80 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/" class="nav">Home</router-link>
+    <router-link to="/game" class="nav">Game</router-link>
+    <router-link to="/rules" class="nav">Rules</router-link>
   </nav>
   <router-view />
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
 }
 
-nav {
-  padding: 30px;
+.nav {
+  color: #225762;
+  text-decoration: none;
+  &:hover {
+    color: #ff00c8;
+  }
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+body {
+  color: white;
+  background-color: black;
+  font-family: Bahnschrift, sans-serif;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+.neon {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 0 8px yellow;
+  animation: blinker 6s;
+  animation-iteration-count: 1;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 0.2;
+  }
+  19% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  21% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 0.2;
+  }
+  23% {
+    opacity: 0.2;
+  }
+  36% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 1;
+  }
+  41% {
+    opacity: 0;
+  }
+  42% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 </style>
