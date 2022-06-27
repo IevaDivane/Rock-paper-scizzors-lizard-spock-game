@@ -76,7 +76,7 @@ export default defineComponent({
   }),
 
   methods: {
-    choose(pick: any) {
+    choose(pick: null) {
       this.myPick = pick;
       const picks = ["rock", "paper", "scissors", "spock", "lizard"];
       this.randPick = picks[Math.floor(Math.random() * picks.length)];
